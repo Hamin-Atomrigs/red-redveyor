@@ -1,8 +1,9 @@
 export default function FifthLanding() {
+  const item = "#1C1947"
+
   return (
     <>
-      <div id="#contactUs">This is fifth Part of landing page</div>
-      <div className="flex flex-row justify-center">
+      <div className={`flex flex-row justify-center bg-[${item}] text-white`} >
         <div>
         <div>
           email2
