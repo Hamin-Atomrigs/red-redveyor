@@ -5,7 +5,7 @@ export default function FifthLanding() {
       <div className="flex flex-row justify-center">
         <div>
         <div>
-          email
+          email2
         </div>
         <div>
           telephone
