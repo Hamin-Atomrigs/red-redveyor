@@ -1,3 +1,4 @@
+'use client';
 import FirstLanding from './components/landing/first/first';
 import SecondLanding from './components/landing/second/second';
 import ThirdLanding from './components/landing/third/third';
