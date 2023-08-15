@@ -9,8 +9,8 @@ const footerFont = Nunito_Sans({
 export default function Footer() {
   return (
     <>
-      <div className="flex items-center justify-center h-10 bg-blue-50">
-        <div className={[footerFont.className, 'text'].join(' ')}>© 2023 Red Conveyor 레드콘베이어. All rights reserved.</div>
+      <div className="flex items-center justify-center h-10 bg-[#162A4A]">
+        <div className={[footerFont.className, 'text', 'text-white'].join(' ')}>© 2023 Red Conveyor 레드콘베이어. All rights reserved.</div>
       </div>
     </>
   );
