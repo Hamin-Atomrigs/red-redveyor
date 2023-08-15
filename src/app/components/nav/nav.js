@@ -22,11 +22,11 @@ export default function Nav() {
             <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#services">
               서비스
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#products">
-              제품
-            </Link>
             <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#portfolio">
               포트폴리오
+            </Link>
+            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#products">
+              제품
             </Link>
             <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#contactUs">
               연락처

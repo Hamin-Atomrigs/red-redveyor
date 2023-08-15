@@ -17,7 +17,7 @@ export default function Box(props) {
   return (
     <>
       <div className="flex flex-col basis-2/6 items-center">
-        <div className="max-w-xs rounded-[25px] shadow py-5 px-7 max-w-xs">
+        <div className="max-w-xs rounded-[25px] shadow py-5 px-7 bg-white max-w-sm">
           <div className={[headerFont.className, 'text-xl', 'mb-6'].join(' ')}>{props.title}</div>
           <div className={[subHeaderFont.className, 'text-lg', 'mb-11'].join(' ')}>{props.subTitle}</div>
           <Button height="h-10" width="w-36" name="더 보기" />

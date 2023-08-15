@@ -17,8 +17,8 @@ const subHeaderFont = Nunito_Sans({
 export default function SecondLanding() {
   return (
     <>
-      <div id="services">
-        <div className="flex flex-col	items-center mx-auto text-center mt-20 max-w-2xl">
+      <div id="services" className="bg-cover py-20" style={{ backgroundImage: 'url(/service-section.png)' }}>
+        <div className="flex flex-col	items-center mx-auto text-center max-w-2xl">
           <div className={[headerFont.className, 'text-4xl', 'mb-6'].join(' ')}>서비스</div>
           <div className={[subHeaderFont.className, 'text-xl'].join(' ')}>레드콘베이어는 고객의 요구에 맞춤 제작된 콘베이어와 도면 제작 서비스를 전문으로 제공합니다.</div>
         </div>

@@ -39,7 +39,7 @@ const subHeaderFont = Nunito_Sans({
 export default function FourthLanding() {
   return (
     <>
-      <div id="#portfolio">
+      <div id="products" className="bg-cover py-20" style={{ backgroundImage: 'url(/product-section.png)' }}>
         <div className="flex flex-col	items-center mx-auto text-center my-20 max-w-4xl">
           <div className={[headerFont.className, 'text-4xl', 'mb-6'].join(' ')}>제품</div>
           <div className={[subHeaderFont.className, 'text-xl'].join(' ')}>
@@ -47,7 +47,7 @@ export default function FourthLanding() {
             콘베이어 시스템을 설계하고 제조하여 고객들의 생산성을 향상시키고 비용 효율성을 극대화하는데 주력합니다.
           </div>
         </div>
-        <div className="flex flex-wrap justify-around gap-y-14">
+        <div className="flex flex-wrap justify-center gap-y-14">
           {boxes.map((box, i) => {
             return <Box key={i} title={box.title} subTitle={box.subTitle} />;
           })}
