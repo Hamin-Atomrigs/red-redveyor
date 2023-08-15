@@ -22,7 +22,7 @@ export default function SecondLanding() {
           <div className={[headerFont.className, 'text-4xl', 'mb-6'].join(' ')}>서비스</div>
           <div className={[subHeaderFont.className, 'text-xl'].join(' ')}>레드콘베이어는 고객의 요구에 맞춤 제작된 콘베이어와 도면 제작 서비스를 전문으로 제공합니다.</div>
         </div>
-        <div className="sections flex flex-row justify-center mt-8">
+        <div className="flex flex-row justify-center mt-8">
           <div className="leftSection flex flex-col	items-center w-5/12">
             <div className="image flex items-center justify-center">
               <Image className="absolute mb-[-180px] z-10" src="/eclipse.png" width={358} height={358} alt="eclippse" />

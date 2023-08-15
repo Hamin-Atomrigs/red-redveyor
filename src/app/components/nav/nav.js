@@ -1,7 +1,9 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../button/button';
 
+import { usePathname } from 'next/navigation';
 import { Nunito_Sans } from 'next/font/google';
 
 const navFont = Nunito_Sans({
@@ -11,6 +13,8 @@ const navFont = Nunito_Sans({
 });
 
 export default function Nav() {
+  const pathName = usePathname();
+
   return (
     <>
       <nav>
@@ -21,16 +25,16 @@ export default function Nav() {
             </Link>
           </div>
           <div className="flex w-6/12 gap-x-11 justify-center items-center">
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#services">
+            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#services' : '/#services'}`}>
               서비스
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#portfolio">
+            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#portfolio' : '/#portfolio'}`}>
               포트폴리오
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#products">
+            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#products' : '/#products'}`}>
               제품
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href="#contactUs">
+            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#contactUs' : '/#contactUs'}`}>
               연락처
             </Link>
           </div>
