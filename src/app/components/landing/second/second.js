@@ -33,7 +33,7 @@ export default function SecondLanding() {
                 <div className={[headerFont.className, 'text-3xl', 'mb-2.5', 'mt-36'].join(' ')}>콘베이어 제작</div>
                 <div className={[subHeaderFont.className, 'text-xl', 'mt-3']}>고객의 요구를 반영한 다양한 컨베이어 제작 서비스를 제공합니다.</div>
                 <div className="mt-8">
-                  <Button height="h-12" width="w-44" name="더 보기" />
+                  <Button height="h-12" width="w-44" name="더 보기" link="/services/#conveyor" />
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function SecondLanding() {
                 <div className={[headerFont.className, 'text-3xl', 'mb-2.5', 'mt-36'].join(' ')}>도면 제작</div>
                 <div className={[subHeaderFont.className, 'text-xl', 'mt-3']}>다양한 요구사항을 반영하여 정밀한 컨베이어 도면 제작 서비스를 제공합니다.</div>
                 <div className="mt-8">
-                  <Button height="h-12" width="w-44" name="더 보기" />
+                  <Button height="h-12" width="w-44" name="더 보기" link="/services/#autocad" />
                 </div>
               </div>
             </div>

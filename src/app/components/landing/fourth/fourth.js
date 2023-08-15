@@ -5,22 +5,27 @@ const boxes = [
   {
     title: '벨트 콘베이어',
     subTitle: '벨트 컨베이어는 음식물 생산 포장, 육류 이송, 튜브 이송 등 다양한 산업 분야에서 효과적으로 사용됩니다.',
+    link: '/products/#belt-conveyor',
   },
   {
     title: '롤러 콘베이어',
     subTitle: '롤러 컨베이어는 트레이 이송, 창고 박스 이송, 판재 절단 이송 등 다양한 산업 분야에서 효과적으로 사용됩니다.',
+    link: '/products/#roller-conveyor',
   },
   {
     title: '매쉬 콘베이어',
     subTitle: '매쉬 컨베이어는 과일, 채소 세척 라인, 이물질 제거 등 다양한 산업 분야에서 효과적으로 사용됩니다.',
+    link: '/products/#mesh-conveyor',
   },
   {
     title: '체인 콘베이어',
     subTitle: '체인 컨베이어는 파레트 이송, 기계 부품 운반, 사료 및 곡물 이송 라인 등 다양한 산업 분야에서 효과적으로 사용됩니다.',
+    link: '/products/#chain-conveyor',
   },
   {
     title: '효율적인 콘베이어 제작',
     subTitle: '콘베이어는 운반물에 따라서 효율적으로 제작됩니다. 어떤 콘베이어를 제작할 지 모르신다면 해당 페이지를 확인하세요.',
+    link: '/products/#how-to-pick-conveyor',
   },
 ];
 
@@ -49,7 +54,7 @@ export default function FourthLanding() {
         </div>
         <div className="flex flex-wrap justify-center gap-y-14">
           {boxes.map((box, i) => {
-            return <Box key={i} title={box.title} subTitle={box.subTitle} />;
+            return <Box key={i} title={box.title} subTitle={box.subTitle} link={box.link} />;
           })}
         </div>
       </div>

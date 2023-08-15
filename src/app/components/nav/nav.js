@@ -33,7 +33,7 @@ export default function Nav() {
             </Link>
           </div>
           <div className="flex w-3/12 justify-center items-center quote">
-            <Button height="h-10" width="w-36" name="견적문의" />
+            <Button height="h-10" width="w-36" name="견적문의" link="/quote" />
           </div>
         </div>
       </nav>
