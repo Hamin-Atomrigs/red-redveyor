@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from '../button/button';
 
 import { usePathname } from 'next/navigation';
 import { Nunito_Sans } from 'next/font/google';
