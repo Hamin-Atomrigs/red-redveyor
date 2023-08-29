@@ -137,7 +137,7 @@ export default function Products() {
                 벨트 컨베이어는 간단한 구조와 다양한 재질 선택의 장점을 가지고 있으며, 여러 운반 상황에 유연하게 대응할 수 있습니다. 더 많은 정보나 궁금한 사항이 있으면 언제든지 문의해주십시오.
               </p>
               <div className="mb-52">
-                <Button height="h-11" width="w-52" name="견적문의" link="/quote" />
+                <Button height="h-[3.125rem]" width="w-[12.75rem]" name="견적문의" link="/quote" />
               </div>
             </div>
             <div className={openTab === 2 ? 'block' : 'hidden'} id="roller">
@@ -175,7 +175,7 @@ export default function Products() {
                 문의해주십시오.
               </p>
               <div className="mb-52">
-                <Button height="h-11" width="w-52" name="견적문의" link="/quote" />
+                <Button height="h-[3.125rem]" width="w-[12.75rem]" name="견적문의" link="/quote" />
               </div>
             </div>
             <div className={openTab === 3 ? 'block' : 'hidden'} id="mash">
@@ -212,7 +212,7 @@ export default function Products() {
                 문의해주십시오.
               </p>
               <div className="mb-52">
-                <Button height="h-11" width="w-52" name="견적문의" link="/quote" />
+                <Button height="h-[3.125rem]" width="w-[12.75rem]" name="견적문의" link="/quote" />
               </div>
             </div>
             <div className={openTab === 4 ? 'block' : 'hidden'} id="chain">
@@ -247,7 +247,7 @@ export default function Products() {
                 체인 컨베이어는 다양한 형태와 용도로 활용되며, 강력한 운반 능력과 다양한 아타치먼트 조립의 장점을 가지고 있습니다. 더 자세한 정보나 궁금한 사항이 있으면 언제든지 문의해주십시오.
               </p>
               <div className="mb-52">
-                <Button height="h-11" width="w-52" name="견적문의" link="/quote" />
+                <Button height="h-[3.125rem]" width="w-[12.75rem]" name="견적문의" link="/quote" />
               </div>
             </div>
             <div className={openTab === 5 ? 'block' : 'hidden'} id="new">
@@ -297,7 +297,7 @@ export default function Products() {
                 언제든지 문의해주십시오.
               </p>
               <div className="mb-52">
-                <Button height="h-11" width="w-52" name="견적문의" link="/quote" />
+                <Button height="h-[3.125rem]" width="w-[12.75rem]" name="견적문의" link="/quote" />
               </div>
             </div>
           </div>

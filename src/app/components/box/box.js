@@ -20,7 +20,7 @@ export default function Box(props) {
         <div className="max-w-xs rounded-[25px] shadow py-5 px-7 bg-white max-w-sm">
           <div className={[headerFont.className, 'text-xl', 'mb-6'].join(' ')}>{props.title}</div>
           <div className={[subHeaderFont.className, 'text-lg', 'mb-11'].join(' ')}>{props.subTitle}</div>
-          <Button height="h-10" width="w-36" name="더 보기" link={props.link} />
+          <Button height="h-[2.75rem]" width="w-[7.1875rem]" name="더 보기" link={props.link} />
         </div>
       </div>
     </>
