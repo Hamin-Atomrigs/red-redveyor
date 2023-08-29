@@ -19,19 +19,19 @@ export default function Nav() {
       <nav>
         <div className="flex h-36 w-screen justify-center">
           <div className="flex w-6/12 gap-x-11 justify-center items-center">
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#services' : '/#services'}`}>
+            <Link className={[navFont.className, 'w-24', 'text-center', 'mt-[1.5rem]'].join(' ')} href={`${pathName === '/' ? '#services' : '/#services'}`}>
               서비스
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#portfolio' : '/#portfolio'}`}>
+            <Link className={[navFont.className, 'w-24', 'text-center', 'mt-[1.5rem]'].join(' ')} href={`${pathName === '/' ? '#portfolio' : '/#portfolio'}`}>
               포트폴리오
             </Link>
             <Link href={'/'}>
               <Image src="/main-logo.svg" width={162} height={77} alt="logo" />
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#products' : '/#products'}`}>
+            <Link className={[navFont.className, 'w-24', 'text-center', 'mt-[1.5rem]'].join(' ')} href={`${pathName === '/' ? '#products' : '/#products'}`}>
               제품
             </Link>
-            <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#contactUs' : '/#contactUs'}`}>
+            <Link className={[navFont.className, 'w-24', 'text-center', 'mt-[1.5rem]'].join(' ')} href={`${pathName === '/' ? '#contactUs' : '/#contactUs'}`}>
               연락처
             </Link>
           </div>
