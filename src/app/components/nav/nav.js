@@ -26,7 +26,7 @@ export default function Nav() {
               포트폴리오
             </Link>
             <Link href={'/'}>
-              <Image src="/main-logo.png" width={162} height={77} alt="logo" />
+              <Image src="/main-logo.svg" width={162} height={77} alt="logo" />
             </Link>
             <Link className={[navFont.className, 'w-24', 'text-center'].join(' ')} href={`${pathName === '/' ? '#products' : '/#products'}`}>
               제품
