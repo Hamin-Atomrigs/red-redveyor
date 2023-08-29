@@ -30,7 +30,7 @@ export default function Products() {
         <ul className="flex list-none flex-col mt-36" role="tablist">
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
             <a
-              className={[`text-xl font-bold px-5 py-3 ${openTab === 1 ? 'text-black underline underline-offset-[9px]' : 'text-slate-300'} ${headerFont.className}`].join(' ')}
+              className={[`text-xl font-bold px-5 py-3 ${openTab === 1 ? 'text-black underline underline-offset-[9px]' : 'text-[#696A6D]'} ${headerFont.className}`].join(' ')}
               onClick={(e) => {
                 e.preventDefault();
                 setOpenTab(1);
@@ -44,7 +44,7 @@ export default function Products() {
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
             <a
-              className={[`text-xl font-bold px-5 py-3 ${openTab === 2 ? 'text-black underline underline-offset-[9px]' : 'text-slate-300'} ${headerFont.className}`].join(' ')}
+              className={[`text-xl font-bold px-5 py-3 ${openTab === 2 ? 'text-black underline underline-offset-[9px]' : 'text-[#696A6D]'} ${headerFont.className}`].join(' ')}
               onClick={(e) => {
                 e.preventDefault();
                 setOpenTab(2);
@@ -58,7 +58,7 @@ export default function Products() {
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
             <a
-              className={[`text-xl font-bold px-5 py-3 ${openTab === 3 ? 'text-black underline underline-offset-[9px]' : 'text-slate-300'} ${headerFont.className}`].join(' ')}
+              className={[`text-xl font-bold px-5 py-3 ${openTab === 3 ? 'text-black underline underline-offset-[9px]' : 'text-[#696A6D]'} ${headerFont.className}`].join(' ')}
               onClick={(e) => {
                 e.preventDefault();
                 setOpenTab(3);
@@ -72,7 +72,7 @@ export default function Products() {
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
             <a
-              className={[`text-xl font-bold px-5 py-3 ${openTab === 4 ? 'text-black underline underline-offset-[9px]' : 'text-slate-300'} ${headerFont.className}`].join(' ')}
+              className={[`text-xl font-bold px-5 py-3 ${openTab === 4 ? 'text-black underline underline-offset-[9px]' : 'text-[#696A6D]'} ${headerFont.className}`].join(' ')}
               onClick={(e) => {
                 e.preventDefault();
                 setOpenTab(4);
@@ -86,7 +86,7 @@ export default function Products() {
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
             <a
-              className={[`text-xl font-bold px-5 py-3 ${openTab === 5 ? 'text-black underline underline-offset-[9px]' : 'text-slate-300'} ${headerFont.className}`].join(' ')}
+              className={[`text-xl font-bold px-5 py-3 ${openTab === 5 ? 'text-black underline underline-offset-[9px]' : 'text-[#696A6D]'} ${headerFont.className}`].join(' ')}
               onClick={(e) => {
                 e.preventDefault();
                 setOpenTab(5);
