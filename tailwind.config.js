@@ -11,7 +11,12 @@ module.exports = {
     colors: {
       'cyan': '#65CEC2',
       'black': '#11151C',
+      'white': '#FCFCFC',
       'button-yellow': '#EFDD8D',
+      'card-section': '#EAF2F1',
+    },
+    boxShadow: {
+      'service-card': '0px 4px 25px 0px rgba(0, 0, 0, 0.08)'
     }
   },
   plugins: [],

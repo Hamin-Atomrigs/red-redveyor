@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <FirstLanding />
-      {/* <SecondLanding />
-      <ThirdLanding />
-      <FourthLanding />
-      <FifthLanding /> */}
+      <SecondLanding />
+      {/* <ThirdLanding /> */}
+      {/* <FourthLanding /> */}
+      {/* <FifthLanding /> */}
     </>
   );
 }
