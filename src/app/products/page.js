@@ -39,7 +39,7 @@ export default function Products() {
               href="#conveyor"
               role="tablist"
             >
-              벨트 콘베이어
+              벨트 컨베이어
             </a>
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
@@ -53,7 +53,7 @@ export default function Products() {
               href="#conveyor"
               role="tablist"
             >
-              롤러 콘베이어
+              롤러 컨베이어
             </a>
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
@@ -67,7 +67,7 @@ export default function Products() {
               href="#conveyor"
               role="tablist"
             >
-              메쉬 콘베이어
+              메쉬 컨베이어
             </a>
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
@@ -81,7 +81,7 @@ export default function Products() {
               href="#conveyor"
               role="tablist"
             >
-              체인 콘베이어
+              체인 컨베이어
             </a>
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center mb-24">
@@ -95,7 +95,7 @@ export default function Products() {
               href="#conveyor"
               role="tablist"
             >
-              효율적인 콘베이어 제작
+              효율적인 컨베이어 제작
             </a>
           </li>
         </ul>

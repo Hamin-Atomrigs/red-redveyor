@@ -7,7 +7,7 @@ export default function SecondLanding() {
   const services = [
     {
       image: '/conveyor-service.svg',
-      name: "콘베이어 제작",
+      name: "컨베이어 제작",
       desc: "고객의 요구를 반영한 다양한 컨베이어 제작 서비스를 제공합니다."
     },
     {
@@ -22,11 +22,11 @@ export default function SecondLanding() {
       <div id="services" className="bg-cover py-5" style={{ backgroundImage: 'url(/landing-first-part-bg.svg)' }}>
         <div className="bg-card-section max-w-xs flex flex-col items-center m-auto py-11 rounded-2xl md:flex-row md:py-7 md:gap-x-20 2xl:py-16 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-64">
           <div className="w-56 md:w-80 2xl:w-[505px]">
-            <div className={[headerFont.className, 'text-base', 'pb-2', 'md:text-xl', '2xl:text-4xl'].join(' ')}>우리는 어떤 제품을 제공합니까?</div>
+            <div className={[headerFont.className, 'text-base', 'pb-2', 'md:text-xl', '2xl:text-4xl'].join(' ')}>우리는 어떤 서비스를 제공합니까?</div>
             <div className={[subHeaderFont.className, 'text-[9px]', 'pb-9', 'md:text-xs', '2xl:text-base', 'pb-8', 'md:pb-5', '2xl:pb-14'].join(' ')}>
-              레드콘베이어는 고객의 요구에 맞춤 제작된 콘베이어와 도면 제작 서비스를 전문으로 제공합니다.
+              레드컨베이어는 고객의 요구에 맞춤 제작된 컨베이어와 도면 제작 서비스를 전문으로 제공합니다.
             </div>
-            <Button height="h-6 md:h-7 2xl:h-12" width="w-20 md:w-20 2xl:w-36" size="text-[9px] md:text-xs 2xl:text-base" bg="black" name="더 보기" link="/products" />
+            <Button height="h-6 md:h-7 2xl:h-12" width="w-20 md:w-20 2xl:w-36" size="text-[9px] md:text-xs 2xl:text-base" bg="black" name="더 보기" link="/services" />
           </div>
           <div className="hidden md:flex flex-col gap-y-6">
             {services.map((s, i) => {

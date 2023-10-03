@@ -37,7 +37,7 @@ export default function Services() {
               href="#conveyor"
               role="tablist"
             >
-              콘베이어 제작
+              컨베이어 제작
             </a>
           </li>
           <li className="mr-2 last:mr-0 flex-auto text-center">

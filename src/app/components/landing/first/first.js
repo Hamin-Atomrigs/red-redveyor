@@ -16,7 +16,7 @@ export default function FirstLanding() {
           </div>
           <div className="w-44 pl-6 md:w-80 md:pl-12 2xl:w-[550px] 2xl:pl-20 flex flex-col justify-center">
             <div className={[handWriteFont.className, 'text-cyan', 'text-[5px]', 'md:text-[14px]', '2xl:text-[20px]'].join(' ')}>the best conveyor services</div>
-            <div className={[headerFont.className, 'text-xl', 'md:text-3xl', '2xl:text-5xl'].join(' ')}>콘베이어</div>
+            <div className={[headerFont.className, 'text-xl', 'md:text-3xl', '2xl:text-5xl'].join(' ')}>컨베이어</div>
             <div className={[headerFont.className, 'text-xl', 'md:text-3xl', '2xl:text-5xl', 'mb-1', '2xl:mb-7'].join(' ')}>제작의 최강자</div>
             <div className={[subHeaderFont.className, 'text-[9px]', 'md:text-xs', '2xl:text-lg', 'pb-8', 'md:pb-5', '2xl:pb-14'].join(' ')}>
               30년간 검증된 컨베이어 제작의 노하우를 바탕으로, 탁월한 기술과 신뢰로 고객의 요구를 만족시키는 최적화된 솔루션을 제공합니다

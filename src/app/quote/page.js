@@ -68,13 +68,13 @@ export default function Quote() {
           </div>
           <div className="flex flex-col w-[34rem] mb-5">
             <label className={[descFont.className, 'text-xl', 'mb-2.5'].join(' ')} for="firstName">
-              콘베이어 종류
+              컨베이어 종류
             </label>
             <input className="rounded-[15px] border border-black border-opacity-20 h-12 p-5" type="text" id="firstName" name="firstName"></input>
           </div>
           <div>
             <label className={[descFont.className, 'text-xl', 'mb-2.5'].join(' ')} for="firstName">
-              콘베이어 치수
+              컨베이어 치수
             </label>
           </div>
           <div className="flex flex-col w-[34rem] mb-5 mt-24">
@@ -101,25 +101,25 @@ export default function Quote() {
           </div>
           <div className="flex flex-col w-[34rem] mb-5">
             <label className={[descFont.className, 'text-xl', 'mb-2.5'].join(' ')} for="firstName">
-              콘베이어 공급 전원
+              컨베이어 공급 전원
             </label>
             <input className="rounded-[15px] border border-black border-opacity-20 h-12 p-5" type="text" id="firstName" name="firstName"></input>
           </div>
           <div className="flex flex-col w-[34rem] mb-5">
             <label className={[descFont.className, 'text-xl', 'mb-2.5'].join(' ')} for="firstName">
-              콘베이어 페인트 색상
+              컨베이어 페인트 색상
             </label>
             <input className="rounded-[15px] border border-black border-opacity-20 h-12 p-5" type="text" id="firstName" name="firstName"></input>
           </div>
           <div className="flex flex-col w-[34rem] mb-5">
             <label className={[descFont.className, 'text-xl', 'mb-2.5'].join(' ')} for="firstName">
-              콘베이어 속도 조절
+              컨베이어 속도 조절
             </label>
             <input className="rounded-[15px] border border-black border-opacity-20 h-12 p-5" type="text" id="firstName" name="firstName"></input>
           </div>
           <div className="flex flex-col w-[34rem] mb-5">
             <label className={[descFont.className, 'text-xl', 'mb-2.5'].join(' ')} for="firstName">
-              콘베이어 본체외 추가 제작품
+              컨베이어 본체외 추가 제작품
             </label>
             <input className="rounded-[15px] border border-black border-opacity-20 h-12 p-5" type="text" id="firstName" name="firstName"></input>
           </div>
