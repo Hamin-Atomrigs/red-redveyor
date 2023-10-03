@@ -7,12 +7,12 @@ export default function FirstLanding() {
   return (
     <>
       <div className="bg-cover" style={{ backgroundImage: 'url(/landing-first-part-bg.svg)' }}>
-        <div className="max-w-sm flex flex-row px-4 py-11 md:py-15 2xl:py-24 mx-auto md:max-w-3xl md:justify-center 2xl:max-w-7xl" >
+        <div className="max-w-xs flex flex-row px-4 py-11 md:py-15 2xl:py-24 mx-auto md:max-w-3xl md:justify-center 2xl:max-w-7xl" >
           <div className="hidden md:block md:w-36 md:h-60 md:mr-2 2xl:w-64 2xl:h-[616px] relative">
             <Image className="rounded-3xl object-cover" src="/first-section-belt.svg" alt="first-section-belt" fill />
           </div>
           <div className="w-40 h-52 md:w-52 md:h-60 2xl:w-96 2xl:h-[616px] relative">
-            <Image className="rounded-3xl object-cover" src="/second-section-belt.svg" alt="second-section-belt" fill />
+            <Image className="rounded-3xl object-cover" src="/second-section-belt.png" alt="second-section-belt" fill />
           </div>
           <div className="w-44 pl-6 md:w-80 md:pl-12 2xl:w-[550px] 2xl:pl-20 flex flex-col justify-center">
             <div className={[handWriteFont.className, 'text-cyan', 'text-[5px]', 'md:text-[14px]', '2xl:text-[20px]'].join(' ')}>the best conveyor services</div>

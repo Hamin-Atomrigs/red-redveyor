@@ -20,7 +20,7 @@ export default function SecondLanding() {
   return (
     <>
       <div id="services" className="bg-cover py-5" style={{ backgroundImage: 'url(/landing-first-part-bg.svg)' }}>
-        <div className="bg-card-section max-w-sm flex flex-col items-center m-auto py-11 rounded-2xl md:flex-row md:py-7 md:gap-x-20 2xl:py-16 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-64">
+        <div className="bg-card-section max-w-xs flex flex-col items-center m-auto py-11 rounded-2xl md:flex-row md:py-7 md:gap-x-20 2xl:py-16 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-64">
           <div className="w-56 md:w-80 2xl:w-[505px]">
             <div className={[headerFont.className, 'text-base', 'pb-2', 'md:text-xl', '2xl:text-4xl'].join(' ')}>우리는 어떤 제품을 제공합니까?</div>
             <div className={[subHeaderFont.className, 'text-[9px]', 'pb-9', 'md:text-xs', '2xl:text-base', 'pb-8', 'md:pb-5', '2xl:pb-14'].join(' ')}>
@@ -46,7 +46,7 @@ export default function SecondLanding() {
             })}
           </div>
         </div>
-        <div className="flex flex-row m-auto mt-12 max-w-sm gap-x-6 justify-center md:hidden">
+        <div className="flex flex-row m-auto mt-12 max-w-xs gap-x-6 justify-center md:hidden">
           {services.map((s, i) => {
             return (
               <div className="flex flex-col text-center items-center px-3 pt-4 pb-6 w-44 bg-white shadow-service-card rounded-xl" key={i}>
