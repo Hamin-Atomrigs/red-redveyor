@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <Nav />
+        {/* <Nav /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
