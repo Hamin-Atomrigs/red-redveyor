@@ -50,7 +50,7 @@ export default function Nav() {
               제품
             </Link>
             <Link href={'/'}>
-              <Image src="/main-logo.svg" width={162} height={77} alt="logo" />
+              <Image src="/main-logo.png" width={162} height={77} alt="logo" />
             </Link>
             <Link className={[navigationFont.className, 'w-24', 'text-center', 'mt-[1.5rem]'].join(' ')} href={`${pathName === '/' ? '#portfolio' : '/#portfolio'}`}>
               포트폴리오
@@ -62,7 +62,9 @@ export default function Nav() {
         </div>
         <div className="lg:hidden flex justify-end items-center h-20">
           <div className="w-24 h-10 relative">
-            <Image className="object-cover" src="/main-logo.svg" fill alt="logo" />
+            <Link href={'/'}>
+              <Image className="object-cover" src="/main-logo.png" fill alt="logo" />
+            </Link>
           </div>
           <div className="w-2/5 flex items-center justify-end pr-4">
             <button onClick={handleClick} className="w-3.5 h-3.5 relative">
