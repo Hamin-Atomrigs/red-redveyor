@@ -12,6 +12,12 @@ const subHeaderFont = Nunito_Sans({
     subsets: ['latin'],
 });
 
+const navigationFont = Nunito_Sans({
+    weight: '700',
+    style: 'normal',
+    subsets: ['latin'],
+});
+
 const handWriteFont = Caveat({
     weight: '400',
     style: 'normal',
@@ -21,5 +27,6 @@ const handWriteFont = Caveat({
 export {
     headerFont,
     subHeaderFont,
+    navigationFont,
     handWriteFont,
 }
