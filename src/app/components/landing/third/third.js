@@ -9,7 +9,7 @@ import { portfolios } from "../../portfolios/portfolios";
 export default function ThirdLanding() {
   return (
     <>
-      <div id="portfolio" className="container max-w-xs mx-auto md:max-w-3xl 2xl:max-w-7xl">
+      <div id="portfolio" className="container max-w-xs py-11 mx-auto md:max-w-3xl md:py-7 2xl:max-w-7xl 2xl:py-16">
         <div className="flex items-center justify-center w-full h-full py-24 sm:py-8">
           {/* Carousel for desktop and large size devices */}
           <CarouselProvider className="lg:block hidden" naturalSlideWidth={370} isIntrinsicHeight={true} totalSlides={6} visibleSlides={3.5} step={1} infinite={true}>
