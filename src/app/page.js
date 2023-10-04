@@ -10,10 +10,10 @@ import './globals.css';
 export default function Home() {
   return (
     <>
-      <FirstLanding />
-      <SecondLanding />
+      <FirstLanding style={{ marginLeft: '30px', marginRight: '30px' }} />
+      <SecondLanding style={{ marginLeft: '30px', marginRight: '30px' }} />
       <ThirdLanding />
-      {/* <FourthLanding /> */}
+      <FourthLanding />
       {/* <FifthLanding /> */}
     </>
   );
