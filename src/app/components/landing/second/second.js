@@ -31,7 +31,7 @@ export default function SecondLanding() {
           <div className="hidden md:flex flex-col gap-y-6">
             {services.map((s, i) => {
               return (
-                <div className="flex flex-col text-center items-center md:p-5 2xl:px-8 2xl:pb-8 2xl:pt-10 w-36 2xl:w-60 bg-white shadow-service-card rounded-xl" key={i}>
+                <div className="flex flex-col text-center items-center md:p-5 2xl:px-8 2xl:pb-8 2xl:pt-10 w-36 2xl:w-60 bg-white shadow-service-card md:rounded-xl 2xl:rounded-3xl" key={i}>
                   <div className="w-9 h-9 2xl:w-20 2xl:h-20 relative">
                     <Image src={s.image} fill alt={s.name} />
                   </div>

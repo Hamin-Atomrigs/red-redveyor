@@ -74,7 +74,7 @@ export default function Nav() {
         </div>
       </nav>
       {isOpen &&
-        <div className="flex flex-col h-screen w-screen py-8 text-base items-center">
+        <div className="flex flex-col h-screen w-screen py-8 text-base items-center overflow-y-hidden">
           {links.map((l, i) => {
             return (
               <Link className={[navigationFont.className, 'w-80', 'text-base', 'text-center', 'h-12', 'pb-2.5', 'flex', 'items-center', 'justify-center'].join(' ')} key={i} href={pathName === '/' ? l.id : l.pathName}>{l.name}</Link>
