@@ -32,7 +32,7 @@ export default function ThirdLanding() {
                   <div id="slider" className="h-full w-full flex gap-4 items-center justify-start ">
                     {portfolios.map((portfolio, index) => {
                       return (
-                        <Slide className="h-[440px]" index={index}>
+                        <Slide key={index} className="h-[440px]" index={index}>
                           <div className="flex relative w-full">
                             <div className="flex relative">
                               <Image className="object-cover object-center w-full rounded-2xl" src={portfolio.pics[0]} alt={portfolio.name} width={0}
@@ -79,7 +79,7 @@ export default function ThirdLanding() {
                   <div id="slider" className="h-full w-full flex gap-4 items-center justify-start ">
                     {portfolios.map((portfolio, index) => {
                       return (
-                        <Slide className="h-[230px]" index={index}>
+                        <Slide key={index} className="h-[230px]" index={index}>
                           <div className="flex relative w-full">
                             <div className="flex relative">
                               <Image className="object-cover object-center w-full rounded-2xl" src={portfolio.pics[0]} alt={portfolio.name} width={0}
@@ -126,7 +126,7 @@ export default function ThirdLanding() {
                   <div id="slider" className="h-full w-full flex gap-4 items-center justify-start ">
                     {portfolios.map((portfolio, index) => {
                       return (
-                        <Slide className="h-[170px]" index={index}>
+                        <Slide key={index} className="h-[170px]" index={index}>
                           <div className="flex relative w-full">
                             <div className="flex relative">
                               <Image className="object-cover object-center w-full rounded-2xl" src={portfolio.pics[0]} alt={portfolio.name} width={0}
