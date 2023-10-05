@@ -1,19 +1,10 @@
-import { Nunito_Sans } from 'next/font/google';
-import { useEffect } from 'react';
-
-const headerFont = Nunito_Sans({
-  weight: '700',
-  style: 'normal',
-  subsets: ['latin'],
-});
-
-const subHeaderFont = Nunito_Sans({
-  weight: '400',
-  style: 'normal',
-  subsets: ['latin'],
-});
+import { navigationFont, subHeaderFont } from '../../font/font';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function FifthLanding() {
+  const [copyMessage, setCopyMessage] = useState(false);
+
   useEffect(() => {
     const mapScript = document.createElement('script');
 
@@ -39,36 +30,55 @@ export default function FifthLanding() {
     mapScript.addEventListener('load', onLoadKakaoMap);
   }, []);
 
+  const handleClick = () => {
+    navigator.clipboard.writeText('gasiyo@hanmail.net')
+    setCopyMessage('이메일이 복사되었습니다. 이메일을 보내주세요!')
+  }
+
   return (
     <>
-      <div id="contactUs" className="flex flex-row bg-[#162A4A]">
-        <div className="text-white ml-48 mt-28">
-          <div className="mb-20">
-            <div className={[headerFont.className, 'text-2xl'].join(' ')}>E-mail</div>
-            <div className={[subHeaderFont.className, 'text-lg'].join(' ')}>gasiyo@hanmail.net</div>
-          </div>
-          <div className="mb-20">
-            <div className={[headerFont.className, 'text-2xl'].join(' ')}>Telephone</div>
-            <div className={[subHeaderFont.className, 'text-lg'].join(' ')}>031-479-1990</div>
-          </div>
-          <div className="mb-20">
-            <div className={[headerFont.className, 'text-2xl'].join(' ')}>Fax</div>
-            <div className={[subHeaderFont.className, 'text-lg'].join(' ')}>02-2685-1745</div>
-          </div>
-          <div className="mb-40">
-            <div className={[headerFont.className, 'text-2xl'].join(' ')}>Business Hour</div>
-            <div className={[subHeaderFont.className, 'text-lg'].join(' ')}>월-금, 8AM-6PM</div>
-          </div>
-        </div>
-        <div className="ml-72 mt-28">
-          <div className="text-white pb-12">
-            <div className={[headerFont.className, 'text-2xl'].join(' ')}>Address</div>
-            <div className={[subHeaderFont.className, 'text-lg'].join(' ')}>경기 시흥시 금오로477번길 15-5</div>
-          </div>
+      <div id="contactUs" className="flex flex-col bg-black items-center">
+        <div className='flex flex-col md:flex-row max-w-xs md:max-w-3xl 2xl:max-w-7xl my-12 md:gap-x-20 2xl:gap-x-48'>
           <div>
-            <div id="map" className="w-96 h-96"></div>
+            <button onClick={handleClick} className={`w-28 h-6 bg-button-yellow rounded-3xl flex pl-2 items-center justify-center relative md:ml-7 md:mt-7`}>
+              <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-sm'].join(' ')}>이메일 복사</div>
+              <div className={`h-6 w-[24px] 2xl:w-[35px] relative`}>
+                <Image fill src="/bg-black-copy.svg" alt="bg-black-copy" />
+              </div>
+            </button>
+            <div className={[subHeaderFont.className, 'text-xs', 'text-white', 'mt-2', '2xl:text-sm'].join(' ')}>
+              {copyMessage}
+            </div>
+          </div>
+          <div className="flex flex-row text-white flex-wrap basis-2/4 md:flex-col md:basis-full gap-y-5 gap-x-16 mt-7">
+            <div className="w-32">
+              <div className={[navigationFont.className, 'text-xs', '2xl:text-lg'].join(' ')}>E-mail</div>
+              <div className={[subHeaderFont.className, 'text-xs', '2xl:text-sm'].join(' ')}>gasiyo@hanmail.net</div>
+            </div>
+            <div className="w-32">
+              <div className={[navigationFont.className, 'text-xs', '2xl:text-lg'].join(' ')}>Telephone</div>
+              <div className={[subHeaderFont.className, 'text-xs', '2xl:text-sm'].join(' ')}>031-479-1990</div>
+            </div>
+            <div className="w-32">
+              <div className={[navigationFont.className, 'text-xs', '2xl:text-lg'].join(' ')}>Fax</div>
+              <div className={[subHeaderFont.className, 'text-xs', '2xl:text-sm'].join(' ')}>02-2685-1745</div>
+            </div>
+            <div className="w-32">
+              <div className={[navigationFont.className, 'text-xs', '2xl:text-lg'].join(' ')}>Business Hour</div>
+              <div className={[subHeaderFont.className, 'text-xs', '2xl:text-sm'].join(' ')}>월-금, 8AM-6PM</div>
+            </div>
+          </div>
+          <div className="mt-9">
+            <div className="text-white mb-2.5">
+              <div className={[navigationFont.className, 'text-xs', '2xl:text-lg'].join(' ')}>Address</div>
+              <div className={[subHeaderFont.className, 'text-xs', '2xl:text-sm'].join(' ')}>경기 시흥시 금오로477번길 15-5</div>
+            </div>
+            <div>
+              <div id="map" className="w-44 h-44 2xl:w-64 2xl:h-64"></div>
+            </div>
           </div>
         </div>
+
       </div>
     </>
   );
