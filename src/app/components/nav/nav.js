@@ -66,8 +66,8 @@ export default function Nav() {
               <Image className="object-cover" src="/main-logo.png" fill alt="logo" />
             </Link>
           </div>
-          <div className="w-2/5 flex items-center justify-end pr-4">
-            <button onClick={handleClick} className="w-3.5 h-3.5 relative">
+          <div className="w-2/5 flex items-center justify-end pt-4 pr-6">
+            <button onClick={handleClick} className="w-4 h-3.5 relative">
               <Image className="object-cover" src="/hamburger-menu.svg" fill alt="hamburger" />
             </button>
           </div>
