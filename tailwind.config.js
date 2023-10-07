@@ -17,6 +17,7 @@ module.exports = {
       'card-portfolio': 'rgba(102, 102, 102, 0.50)',
       'border-line': 'rgba(252, 252, 252, 0.20)',
       'grey': '#737373',
+      'grey-2': '#f1f1f1',
       'green': '#EAF2F1'
     },
     boxShadow: {
