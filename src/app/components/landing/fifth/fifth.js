@@ -41,7 +41,7 @@ export default function FifthLanding() {
         <div className='flex flex-col md:flex-row max-w-xs md:max-w-3xl 2xl:max-w-7xl my-12 md:gap-x-20 2xl:gap-x-48'>
           <div>
             <button onClick={handleClick} className={`w-28 h-6 bg-button-yellow rounded-3xl flex pl-2 items-center justify-center relative md:ml-7 md:mt-7`}>
-              <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-sm'].join(' ')}>이메일 복사</div>
+              <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-xs'].join(' ')}>이메일 복사</div>
               <div className={`h-6 w-[24px] 2xl:w-[35px] relative`}>
                 <Image fill src="/bg-black-copy.svg" alt="bg-black-copy" />
               </div>
