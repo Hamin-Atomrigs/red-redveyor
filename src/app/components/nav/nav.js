@@ -61,7 +61,7 @@ export default function Nav() {
           </div>
         </div>
         <div className="lg:hidden flex justify-end items-center h-20">
-          <div className="w-24 h-10 relative">
+          <div className="w-28 h-14 relative">
             <Link href={'/'}>
               <Image className="object-cover" src="/main-logo.png" fill alt="logo" />
             </Link>
