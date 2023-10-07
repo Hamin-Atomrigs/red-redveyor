@@ -73,7 +73,7 @@ export default function Services() {
                   컨베이어 설치와 사용 과정을 통해 효율적인 운반을 실현할 수 있습니다. 문의 사항이나 자세한 안내가 필요하다면 언제든지 문의해주십시오.
                 </p>
                 <div className="flex justify-center mt-10 md:mt-16 md:mb-24 2xl:mt-28 2xl:mb-60">
-                  <Button height="h-6 md:h-7 2xl:h-12" width="w-24 md:w-28 2xl:w-48" size="text-[9px] md:text-xs 2xl:text-base" bg="yellow" name="견적 요청하기" link="/quote" />
+                  <Button height="h-6 md:h-7 2xl:h-12" width="w-24 md:w-28 2xl:w-48" size="text-xs 2xl:text-base" bg="yellow" name="견적 요청하기" link="/quote" />
                 </div>
               </div>
               <div className={openTab === 2 ? 'block' : 'hidden'} id="autocad">
@@ -109,7 +109,7 @@ export default function Services() {
                   기계 도면 제작과 협의 절차를 통해 원활한 협력과 효율적인 결과를 얻을 수 있습니다. 필요한 내용이나 문의 사항이 있으면 언제든지 문의해주십시오.
                 </p>
                 <div className="flex justify-center mt-10 md:mt-16 md:mb-24 2xl:mt-28 2xl:mb-60">
-                  <Button height="h-6 md:h-7 2xl:h-12" width="w-24 md:w-28 2xl:w-48" size="text-[9px] md:text-xs 2xl:text-base" bg="yellow" name="견적 요청하기" link="/quote" />
+                  <Button height="h-6 md:h-7 2xl:h-12" width="w-24 md:w-28 2xl:w-48" size="md:text-xs 2xl:text-base" bg="yellow" name="견적 요청하기" link="/quote" />
                 </div>
               </div>
             </div>

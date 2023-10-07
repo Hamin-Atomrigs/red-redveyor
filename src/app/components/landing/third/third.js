@@ -92,15 +92,14 @@ export default function ThirdLanding() {
                                 <div className="flex h-full items-end">
                                   <div className="bg-card-portfolio w-full rounded-b-2xl backdrop-blur-sm pl-4 py-1.5">
                                     <h3 className={[headerFont.className, "text-xs", "text-white"].join(' ')}>{portfolio.name}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-[10px]", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-[10px]", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-[10px]", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
+                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
+                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
+                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </Link>
-
                         </Slide>
 
                       )
@@ -143,9 +142,9 @@ export default function ThirdLanding() {
                                 <div className="flex h-full items-end">
                                   <div className="bg-card-portfolio w-full rounded-b-2xl backdrop-blur-sm pl-4 py-1.5">
                                     <h3 className={[headerFont.className, "text-xs", "text-white"].join(' ')}>{portfolio.name}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-[9px]", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-[9px]", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-[9px]", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
+                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
+                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
+                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
                                   </div>
                                 </div>
                               </div>

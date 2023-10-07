@@ -23,10 +23,10 @@ export default function SecondLanding() {
         <div className="bg-card-section max-w-xs flex flex-col items-center m-auto py-11 rounded-2xl md:flex-row md:py-7 md:gap-x-20 2xl:py-16 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-64">
           <div className="w-56 md:w-80 2xl:w-[505px]">
             <div className={[headerFont.className, 'text-base', 'pb-2', 'md:text-xl', '2xl:text-4xl'].join(' ')}>우리는 어떤 서비스를 제공합니까?</div>
-            <div className={[subHeaderFont.className, 'text-[9px]', 'pb-9', 'md:text-xs', '2xl:text-base', 'pb-8', 'md:pb-5', '2xl:pb-14'].join(' ')}>
+            <div className={[subHeaderFont.className, 'text-xs', 'pb-9', 'md:text-xs', '2xl:text-base', 'pb-8', 'md:pb-5', '2xl:pb-14'].join(' ')}>
               레드컨베이어는 고객의 요구에 맞춤 제작된 컨베이어와 도면 제작 서비스를 전문으로 제공합니다.
             </div>
-            <Button height="h-6 md:h-7 2xl:h-12" width="w-20 md:w-20 2xl:w-36" size="text-[9px] md:text-xs 2xl:text-base" bg="black" name="더 보기" link="/services" />
+            <Button height="h-6 md:h-7 2xl:h-12" width="w-20 md:w-20 2xl:w-36" size="text-xs 2xl:text-base" bg="black" name="더 보기" link="/services" />
           </div>
           <div className="hidden md:flex flex-col gap-y-6">
             {services.map((s, i) => {
@@ -38,7 +38,7 @@ export default function SecondLanding() {
                   <div className={[headerFont.className, 'md:text-xs', 'md:pt-3', 'md:pb-2', '2xl:text-xl'].join(' ')}>
                     {s.name}
                   </div>
-                  <div className={[subHeaderFont.className, 'md:text-[9px]', '2xl:text-base'].join(' ')}>
+                  <div className={[subHeaderFont.className, 'md:text-xs', '2xl:text-base'].join(' ')}>
                     {s.desc}
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default function SecondLanding() {
                 <div className={[headerFont.className, 'text-xs', 'pt-3', 'pb-2'].join(' ')}>
                   {s.name}
                 </div>
-                <div className={[subHeaderFont.className, 'text-[9px]'].join(' ')}>
+                <div className={[subHeaderFont.className, 'text-xs'].join(' ')}>
                   {s.desc}
                 </div>
               </div>
