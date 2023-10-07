@@ -26,7 +26,7 @@ export default function SecondLanding() {
             <div className={[subHeaderFont.className, 'text-xs', 'pb-9', 'md:text-xs', '2xl:text-base', 'pb-8', 'md:pb-5', '2xl:pb-14'].join(' ')}>
               레드컨베이어는 고객의 요구에 맞춤 제작된 컨베이어와 도면 제작 서비스를 전문으로 제공합니다.
             </div>
-            <Button height="h-6 md:h-7 2xl:h-12" width="w-20 md:w-20 2xl:w-36" size="text-xs 2xl:text-base" bg="black" name="더 보기" link="/services" />
+            <Button height="h-8 md:h-7 2xl:h-12" width="w-24 2xl:w-36" size="text-xs 2xl:text-base" bg="black" name="더 보기" link="/services" />
           </div>
           <div className="hidden md:flex flex-col gap-y-6">
             {services.map((s, i) => {

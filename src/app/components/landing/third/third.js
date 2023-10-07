@@ -151,7 +151,6 @@ export default function ThirdLanding() {
                             </div>
                           </Link>
                         </Slide>
-
                       )
                     })}
                   </div>

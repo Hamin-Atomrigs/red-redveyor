@@ -16,7 +16,8 @@ module.exports = {
       'card-section': '#EAF2F1',
       'card-portfolio': 'rgba(102, 102, 102, 0.50)',
       'border-line': 'rgba(252, 252, 252, 0.20)',
-      'grey': '#868686',
+      'grey': '#737373',
+      'green': '#EAF2F1'
     },
     boxShadow: {
       'service-card': '0px 4px 25px 0px rgba(0, 0, 0, 0.08)'
