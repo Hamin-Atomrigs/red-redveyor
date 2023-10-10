@@ -40,9 +40,9 @@ export default function FifthLanding() {
       <div id="contactUs" className="flex flex-col bg-black items-center">
         <div className='flex flex-col md:flex-row max-w-xs md:max-w-3xl 2xl:max-w-7xl my-12 md:gap-x-20 2xl:gap-x-48'>
           <div>
-            <button onClick={handleClick} className={`w-28 h-6 bg-button-yellow rounded-3xl flex pl-2 items-center justify-center relative md:ml-7 md:mt-7`}>
-              <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-xs'].join(' ')}>이메일 복사</div>
-              <div className={`h-6 w-[24px] 2xl:w-[35px] relative`}>
+            <button onClick={handleClick} className={`w-28 h-8 2xl:w-48 2xl:h-12 bg-button-yellow rounded-3xl flex pl-2 items-center justify-center relative md:ml-7 md:mt-7`}>
+              <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-base'].join(' ')}>이메일 복사</div>
+              <div className={`h-6 w-[24px] 2xl:w-[35px] 2xl:h-[35px] relative`}>
                 <Image fill src="/bg-black-copy.svg" alt="bg-black-copy" />
               </div>
             </button>
@@ -74,7 +74,9 @@ export default function FifthLanding() {
               <div className={[subHeaderFont.className, 'text-xs', '2xl:text-sm'].join(' ')}>경기 시흥시 금오로477번길 15-5</div>
             </div>
             <div>
-              <div id="map" className="w-44 h-44 2xl:w-64 2xl:h-64"></div>
+              <a target="_blank" href="https://map.kakao.com/?urlX=462274&urlY=1096135&urlLevel=3&itemId=18607538&q=%EB%A0%88%EB%93%9C%EB%B2%A0%EC%96%B4&srcid=18607538&map_type=TYPE_MAP">
+                <div id="map" className="w-44 h-44 2xl:w-64 2xl:h-64"></div>
+              </a>
             </div>
           </div>
         </div>
