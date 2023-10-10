@@ -1,14 +1,10 @@
 'use client';
 import { useState } from 'react';
 import Button from '../components/button/button';
-import { useSearchParams } from 'next/navigation';
 import { subHeaderFont, navigationFont } from '../components/font/font';
 
 export default function Services() {
-  const searchParams = useSearchParams();
-  const service = searchParams.get('service');
-
-  const [openTab, setOpenTab] = useState(service === 'conveyor' ? 1 : 2);
+  const [openTab, setOpenTab] = useState(1);
 
   return (
     <div className="flex justify-center">
