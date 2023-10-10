@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
+      <head>
+        <meta name="naver-site-verification" content="c52f35e4f46faadc684cde98b05b551ace43a16b" />
+      </head>
       <body>
         <Nav />
         {children}
