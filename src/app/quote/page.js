@@ -14,18 +14,6 @@ export default function Quote() {
     beltWidth1: '',
     conveyorLength1: '',
     number1: '',
-    // beltWidth2: '',
-    // conveyorLength2: '',
-    // number2: '',
-    // beltWidth3: '',
-    // conveyorLength3: '',
-    // number3: '',
-    // beltWidth4: '',
-    // conveyorLength4: '',
-    // number4: '',
-    // beltWidth5: '',
-    // conveyorLength5: '',
-    // number5: '',
     location1: '',
     location2: '',
     inside: '',
@@ -47,51 +35,6 @@ export default function Quote() {
     });
   };
 
-  // const [divs, setDivs] = useState([
-  //   {
-  //     id: 1,
-  //     content: (
-  //       <div className='leading-[3] text-xs'>
-  //         <label htmlFor="beltWidth1" className="mr-2">
-  //           벨트 폭
-  //         </label>
-  //         <input
-  //           className='rounded-2xl border border-black border-opacity-20 w-16 h-6 mx-2.5'
-  //           type="text"
-  //           id="beltWidth1"
-  //           name="beltWidth1"
-  //           value={formData.beltWidth1}
-  //           onChange={handleInputChange}
-  //         />
-  //         <label htmlFor="conveyorLength1" className="mr-2">
-  //           컨베이어 길이
-  //         </label>
-  //         <input
-  //           className='rounded-2xl border border-black border-opacity-20 w-16 h-6 mx-2.5'
-  //           type="text"
-  //           id="conveyorLength1"
-  //           name="conveyorLength1"
-  //           value={formData.conveyorLength1}
-  //           onChange={handleInputChange}
-  //         />
-  //         - - -
-  //         <label htmlFor="number1" className="mr-2">
-  //           입력
-  //         </label>
-  //         <input
-  //           className='rounded-2xl border border-black border-opacity-20 w-16 h-6 mx-2.5'
-  //           type="text"
-  //           id="number1"
-  //           name="number1"
-  //           value={formData.number1}
-  //           onChange={handleInputChange}
-  //         />
-  //         대
-  //       </div>
-  //     ),
-  //   },
-  // ]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -112,56 +55,6 @@ export default function Quote() {
       console.error('An error occurred', error);
     }
   };
-
-
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   const newDiv = {
-  //     id: divs.length + 1, // Assign a unique ID
-  //     content: (
-  //       <div className='leading-[3] text-xs'>
-  //         <label htmlFor={`beltWidth${divs.length + 1}`} className="mr-2">
-  //           벨트 폭
-  //         </label>
-  //         <input
-  //           className='rounded-2xl border border-black border-opacity-20 w-16 h-6 mx-2.5'
-  //           type="text"
-  //           id={`beltWidth${divs.length + 1}`}
-  //           name={`beltWidth${divs.length + 1}`}
-  //           value={formData[`beltWidth${divs.length + 1}`]}
-  //           onChange={handleInputChange}
-  //         />
-  //         <label htmlFor={`conveyorLength${divs.length + 1}`} className="mr-2">
-  //           컨베이어 길이
-  //         </label>
-  //         <input
-  //           className='rounded-2xl border border-black border-opacity-20 w-16 h-6 mx-2.5'
-  //           type="text"
-  //           id={`conveyorLength${divs.length + 1}`}
-  //           name={`conveyorLength${divs.length + 1}`}
-  //           value={formData[`conveyorLength${divs.length + 1}`]}
-  //           onChange={handleInputChange}
-  //         />
-  //         - - -
-  //         <label htmlFor={`number${divs.length + 1}`} className="mr-2">
-  //           입력
-  //         </label>
-  //         <input
-  //           className='rounded-2xl border border-black border-opacity-20 w-16 h-6 mx-2.5'
-  //           type="text"
-  //           id={`number${divs.length + 1}`}
-  //           name={`number${divs.length + 1}`}
-  //           value={formData[`number${divs.length + 1}`]}
-  //           onChange={handleInputChange}
-  //         />
-  //         대
-  //       </div>
-  //     ),
-  //   };
-  //   if (divs.length < 5) {
-  //     setDivs([...divs, newDiv]);
-  //   }
-  // }
 
   return (
     <>
