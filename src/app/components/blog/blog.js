@@ -1,11 +1,40 @@
 'use client'
-import React from "react";
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { subHeaderFont, navigationFont } from '../font/font';
-import { CarouselProvider, Slider, Slide, ButtonNext } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
+import { CarouselProvider, Slider, Slide, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
+const Lightbox = ({ imageSrc, altText, closeLightbox, isDesktop }) => (
+  <div
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+    onClick={closeLightbox}
+  >
+    <div className="max-w-full max-h-full">
+      <Image
+        src={imageSrc}
+        alt={altText}
+        layout="responsive"
+        width={isDesktop ? 800 : 600}
+        height={isDesktop ? 600 : 400}
+        objectFit="contain"
+        objectPosition="center"
+      />
+    </div>
+  </div>
+);
 
 export default function Blog(props) {
+  const [lightboxImage, setLightboxImage] = useState(null);
+
+  const openLightbox = (imageSrc) => {
+    setLightboxImage(imageSrc);
+  };
+
+  const closeLightbox = () => {
+    setLightboxImage(null);
+  };
+
   return (
     <>
       <div className="flex flex-col max-w-6xl mx-auto mb-24">
@@ -30,12 +59,20 @@ export default function Blog(props) {
                         <Slide key={index} className="h-[215px]" index={index}>
                           <div className="flex relative w-full">
                             <div className="flex relative">
-                              <Image alt={pic} className="object-cover object-center w-full rounded-2xl" src={pic} width={0}
-                                height={215} sizes="100vw" style={{ width: '330px', height: '215px' }} />
+                              <Image
+                                alt={pic}
+                                className="object-cover object-center w-full rounded-2xl"
+                                src={pic}
+                                width={0}
+                                height={215}
+                                sizes="100vw"
+                                style={{ width: '330px', height: '215px' }}
+                                onClick={() => openLightbox(pic)}
+                              />
                             </div>
                           </div>
                         </Slide>
-                      )
+                      );
                     })}
                   </div>
                 </Slider>
@@ -61,12 +98,20 @@ export default function Blog(props) {
                         <Slide key={index} className="h-[150px]" index={index}>
                           <div className="flex relative w-full">
                             <div className="flex relative">
-                              <Image alt={pic} className="object-cover object-center w-full rounded-2xl" src={pic} width={0}
-                                height={150} sizes="100vw" style={{ width: '230px', height: '150px' }} />
+                              <Image
+                                alt={pic}
+                                className="object-cover object-center w-full rounded-2xl"
+                                src={pic}
+                                width={0}
+                                height={150}
+                                sizes="100vw"
+                                style={{ width: '230px', height: '150px' }}
+                                onClick={() => openLightbox(pic)}
+                              />
                             </div>
                           </div>
                         </Slide>
-                      )
+                      );
                     })}
                   </div>
                 </Slider>
@@ -92,12 +137,20 @@ export default function Blog(props) {
                         <Slide key={index} className="h-[90px]" index={index}>
                           <div className="flex relative w-full">
                             <div className="flex relative">
-                              <Image alt={pic} className="object-cover object-center w-full rounded-2xl" src={pic} width={0}
-                                height={90} sizes="100vw" style={{ width: '140px', height: '90px' }} />
+                              <Image
+                                alt={pic}
+                                className="object-cover object-center w-full rounded-2xl"
+                                src={pic}
+                                width={0}
+                                height={90}
+                                sizes="100vw"
+                                style={{ width: '140px', height: '90px' }}
+                                onClick={() => openLightbox(pic)}
+                              />
                             </div>
                           </div>
                         </Slide>
-                      )
+                      );
                     })}
                   </div>
                 </Slider>
@@ -111,6 +164,14 @@ export default function Blog(props) {
               </div>
             </div>
           </CarouselProvider>
+          {lightboxImage && (
+            <Lightbox
+              imageSrc={lightboxImage}
+              altText="Lightbox Image"
+              closeLightbox={closeLightbox}
+              isDesktop={window.innerWidth >= 1024}
+            />
+          )}
         </div>
         <div className="mt-2.5 md:mt-4 flex flex-wrap gap-x-2.5 gap-y-1">
           {props.tags.map((tag, i) => {
@@ -118,7 +179,7 @@ export default function Blog(props) {
               <div key={i} className="rounded-3xl bg-card-section inline-block">
                 <span className={[subHeaderFont.className, 'text-xs', 'text-black', 'opacity-80', 'px-2.5', 'lg:px-4'].join(' ')}>{tag}</span>
               </div>
-            )
+            );
           })}
         </div>
       </div>

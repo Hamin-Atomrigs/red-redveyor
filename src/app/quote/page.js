@@ -2,9 +2,11 @@
 import { useState } from 'react';
 import { headerFont, subHeaderFont, navigationFont } from '../components/font/font';
 import Image from 'next/image';
+import { ReCAPTCHA } from "react-google-recaptcha";
 
 export default function Quote() {
   const [openTab, setOpenTab] = useState(1);
+  const [captchaValue, setCaptchaValue] = useState(null);
   const [formData, setFormData] = useState({
     companyName: '',
     contactPerson: '',
@@ -30,6 +32,10 @@ export default function Quote() {
     comment: '',
   });
 
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
+
   const handleInputChange = (event) => {
     setFormData({
       ...formData,
@@ -37,8 +43,41 @@ export default function Quote() {
     });
   };
 
+  const resetForm = () => {
+    setFormData({
+      companyName: '',
+      contactPerson: '',
+      phoneNumber: '',
+      emailAddress: '',
+      goodsType: '',
+      hourlyTransportQuantity: '',
+      conveyorType: '',
+      beltWidth1: '',
+      conveyorLength1: '',
+      number1: '',
+      location1: '',
+      location2: '',
+      inside: '',
+      outside: '',
+      scheduledInstallationDate: '',
+      conveyorPowerSupply: '',
+      conveyorPaintColor: '',
+      noNeed: '',
+      need: '',
+      additionalItemsOutsideConveyor: '',
+      specificationsForOtherQuotes: '',
+      comment: '',
+    });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!captchaValue) {
+      alert("reCAPTCHA를 완성해주세요");
+      return;
+    }
+
     try {
       const response = await fetch('/api/submit', {
         method: 'POST',
@@ -49,7 +88,9 @@ export default function Quote() {
       });
 
       if (response.ok) {
+        alert("성공적으로 전송되었습니다.");
         console.log('Form submitted successfully');
+        resetForm();
       } else {
         console.error('Form submission failed');
       }
@@ -60,9 +101,12 @@ export default function Quote() {
 
   return (
     <>
-      <div className='max-w-xs 2xl:py-24 mx-auto md:gap-x-3 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-8'>
-        <div className={[headerFont.className, 'text-sm', 'text-center', 'mt-24', 'mb-10', 'md:text-lg', '2xl:text-xl'].join(' ')}>견적신청서</div>
-        <ul className="flex flex-col md:flex-row md:justify-center md:gap-x-5 2xl:gap-x-28 gap-y-5 content-center list-none flex-wrap pt-3 pb-4 flex-row" role="tablist">
+      <div className='max-w-xs 2xl:py-24 mx-auto md:gap-x-3 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-8' style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+        <div className={[headerFont.className, 'text-lg', 'text-center', 'mt-24', 'mb-10', 'md:text-2xl', '2xl:text-3xl'].join(' ')}>무료 상담 신청서</div>
+        <div className={[subHeaderFont.className, 'm-auto', 'text-sm', 'text-center', 'mb-10', 'md:text-lg', '2xl:text-xl', 'md:w-2/3', '2xl:w-2/3', 'w-50%'].join(' ')}>
+          회사명, 담당자 성명, 전화번호, 이메일 주소, 그리고 코멘트는 필수 정보입니다. 이외의 정보도 저희 팀이 빠르고 효과적인 상담을 제공하는 데 큰 도움이 됩니다.
+        </div>
+        <ul className="flex flex-col md:flex-row md:justify-center md:gap-x-5 2xl:gap-x-28 content-center list-none flex-wrap pt-3 pb-4 flex-row" role="tablist">
           <li className="mr-2 last:mr-0 flex-auto md:flex-none w-36">
             <div className='flex 2xl:w-52'>
               {openTab === 1 ? <Image src="/radio-clicked.svg" alt="radio-clicked" width={15} height={15} /> : <Image src="/radio-unclicked.svg" alt="radio-unclicked" width={15} height={15} />}
@@ -300,7 +344,7 @@ export default function Quote() {
                       <label className={[subHeaderFont.className, 'text-xs', 'mb-2.5', 'md:text-sm', '2xl:text-base'].join(' ')}>
                         코멘트
                       </label>
-                      <textarea className={[navigationFont.className, 'rounded-[15px] border border-black border-opacity-20 h-44 2xl:h-80 p-5 text-left'].join(' ')} type="text" id="comment" name="comment" value={formData.comment} onChange={handleInputChange}></textarea>
+                      <textarea required className={[navigationFont.className, 'rounded-[15px] border border-black border-opacity-20 h-44 2xl:h-80 p-5 text-left'].join(' ')} type="text" id="comment" name="comment" value={formData.comment} onChange={handleInputChange}></textarea>
                     </div>
                   </div>
                   <div className="flex justify-center pt-14 pb-14 2xl:pt-16">
@@ -312,6 +356,12 @@ export default function Quote() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mb-5">
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_MY_PASSWORD}
+            onChange={handleCaptchaChange}
+          />
         </div>
       </div>
     </>

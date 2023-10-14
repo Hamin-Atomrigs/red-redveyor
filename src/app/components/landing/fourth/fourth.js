@@ -32,7 +32,7 @@ const boxes = [
 export default function FourthLanding() {
   return (
     <>
-      <div id="products" className="bg-card-section py-20 md:py-12">
+      <div id="products" className="bg-card-section py-20 md:py-12" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
         <div className='flex flex-col	items-center max-w-xs md:max-w-3xl 2xl:max-w-7xl mx-auto'>
           <div className="text-center my-8 md:my-9 md:w-[623px] 2xl:my-20 2xl:w-[1033px]">
             <div className={[headerFont.className, 'text-sm', 'md:text-2xl', '2xl:text-4xl', 'mb-4'].join(' ')}>우리가 제공하는 모든 제품을 확인하세요</div>
@@ -41,7 +41,7 @@ export default function FourthLanding() {
               컨베이어 시스템을 설계하고 제조하여 고객들의 생산성을 향상시키고 비용 효율성을 극대화하는데 주력합니다.
             </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-y-3.5 md:gap-y-9">
+          <div className="flex flex-wrap justify-center gap-y-5 md:gap-y-9">
             {boxes.map((box, i) => {
               return <Box key={i} title={box.title} subTitle={box.subTitle} link={box.link} />;
             })}

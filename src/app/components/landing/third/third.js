@@ -9,10 +9,10 @@ import { portfolios } from "../../portfolios/portfolios";
 export default function ThirdLanding() {
   return (
     <>
-      <div id="portfolio" className="container max-w-xs py-11 mx-auto md:max-w-3xl md:py-7 2xl:max-w-7xl 2xl:py-16">
+      <div id="portfolio" className="container max-w-xs py-11 mx-auto md:max-w-3xl md:py-7 2xl:max-w-7xl 2xl:py-16" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
         <div className="flex items-center justify-center w-full h-full py-24 sm:py-8">
           {/* Carousel for desktop and large size devices */}
-          <CarouselProvider className="lg:block hidden" naturalSlideWidth={370} isIntrinsicHeight={true} totalSlides={6} visibleSlides={3.5} step={1} infinite={true}>
+          <CarouselProvider className="lg:block hidden" naturalSlideWidth={370} isIntrinsicHeight={true} totalSlides={6} visibleSlides={3.2} step={1} infinite={true}>
             <div className="w-full relative flex flex-col items-center justify-center">
               <div className="flex w-full justify-between mb-5">
                 <div className={[navigationFont.className, "w-60", "text-4xl"].join(' ')}>
@@ -42,10 +42,10 @@ export default function ThirdLanding() {
                               <div className="absolute w-full h-full">
                                 <div className="flex h-full items-end">
                                   <div className="bg-card-portfolio w-[370px] rounded-b-2xl backdrop-blur-sm pl-4 py-1.5">
-                                    <h3 className={[headerFont.className, "text-xl", "text-white"].join(' ')}>{portfolio.name}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-sm", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-sm", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-sm", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
+                                    <h3 className={[headerFont.className, "my-3", "text-xl", "text-white"].join(' ')}>{portfolio.name}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-1", "text-sm", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-1", "text-sm", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-1", "text-sm", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
                                   </div>
                                 </div>
                               </div>
@@ -91,10 +91,10 @@ export default function ThirdLanding() {
                               <div className="absolute w-full h-full">
                                 <div className="flex h-full items-end">
                                   <div className="bg-card-portfolio w-full rounded-b-2xl backdrop-blur-sm pl-4 py-1.5">
-                                    <h3 className={[headerFont.className, "text-xs", "text-white"].join(' ')}>{portfolio.name}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
+                                    <h3 className={[headerFont.className, "my-1.5", "text-xs", "text-white"].join(' ')}>{portfolio.name}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-0.5", "text-xs", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-0.5", "text-xs", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-0.5", "text-xs", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
                                   </div>
                                 </div>
                               </div>
@@ -111,7 +111,7 @@ export default function ThirdLanding() {
           </CarouselProvider>
 
           {/* Carousel for mobile and Small size Devices */}
-          <CarouselProvider className="block md:hidden " naturalSlideWidth={150} isIntrinsicHeight={true} totalSlides={6} visibleSlides={2.2} step={1} infinite={true}>
+          <CarouselProvider className="block md:hidden " naturalSlideWidth={150} isIntrinsicHeight={true} totalSlides={6} visibleSlides={1.6} step={1} infinite={true}>
             <div className="w-full relative flex flex-col items-center justify-center">
               <div className="flex w-full justify-between mb-5">
                 <div className={[navigationFont.className, "w-24", "text-sm"].join(' ')}>
@@ -131,20 +131,20 @@ export default function ThirdLanding() {
                   <div id="slider" className="h-full w-full flex gap-4 items-center justify-start ">
                     {portfolios.map((portfolio, index) => {
                       return (
-                        <Slide key={index} className="h-[170px]" index={index}>
+                        <Slide key={index} className="h-[220px]" index={index}>
                           <Link href="/portfolio">
                             <div className="flex relative w-full">
                               <div className="flex relative">
                                 <Image className="object-cover object-center w-full rounded-2xl" src={portfolio.pics[0]} alt={portfolio.name} width={0}
-                                  height={170} sizes="100vw" style={{ width: '150px', height: '170px' }} />
+                                  height={220} sizes="100vw" style={{ width: '187px', height: '220px' }} />
                               </div>
                               <div className="absolute w-full h-full">
                                 <div className="flex h-full items-end">
-                                  <div className="bg-card-portfolio w-full rounded-b-2xl backdrop-blur-sm pl-4 py-1.5">
-                                    <h3 className={[headerFont.className, "text-xs", "text-white"].join(' ')}>{portfolio.name}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
-                                    <h3 className={[subHeaderFont.className, "text-xs", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
+                                  <div className="bg-card-portfolio w-full rounded-b-2xl backdrop-blur-sm pl-3 py-1.5">
+                                    <h3 className={[headerFont.className, "my-1.5", "text-xs", "text-white"].join(' ')}>{portfolio.name}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-0.5", "text-xs", "text-white"].join(' ')}>프로젝트 타입: {portfolio.tags[0]}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-0.5", "text-xs", "text-white"].join(' ')}>프로젝트 기간: {portfolio.duration}</h3>
+                                    <h3 className={[subHeaderFont.className, "mb-0.5", "text-xs", "text-white"].join(' ')}>지역: {portfolio.location}</h3>
                                   </div>
                                 </div>
                               </div>

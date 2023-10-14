@@ -14,7 +14,7 @@ module.exports = {
       'white': '#FCFCFC',
       'button-yellow': '#EFDD8D',
       'card-section': '#EAF2F1',
-      'card-portfolio': 'rgba(102, 102, 102, 0.50)',
+      'card-portfolio': '#11151C',
       'border-line': 'rgba(252, 252, 252, 0.20)',
       'grey': '#737373',
       'grey-2': '#f1f1f1',

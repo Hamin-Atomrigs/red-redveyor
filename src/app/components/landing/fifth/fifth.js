@@ -37,17 +37,19 @@ export default function FifthLanding() {
 
   return (
     <>
-      <div id="contactUs" className="flex flex-col bg-black items-center">
-        <div className='flex flex-col md:flex-row max-w-xs md:max-w-3xl 2xl:max-w-7xl my-12 md:gap-x-20 2xl:gap-x-48'>
+      <div id="contactUs" className="flex flex-col bg-black items-center" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+        <div className='flex flex-col md:flex-row max-w-xs md:max-w-3xl 2xl:max-w-7xl my-12 md:gap-x-20 md:w-[680px] 2xl:gap-x-48 2xl:w-[1000px]'>
           <div>
-            <button onClick={handleClick} className={`w-28 h-8 2xl:w-48 2xl:h-12 bg-button-yellow rounded-3xl flex pl-2 items-center justify-center relative md:ml-7 md:mt-7`}>
-              <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-base'].join(' ')}>이메일 복사</div>
-              <div className={`h-6 w-[24px] 2xl:w-[35px] 2xl:h-[35px] relative`}>
-                <Image fill src="/bg-black-copy.svg" alt="bg-black-copy" />
+            <div className='h-[60px] md:w-[130px] md:h-[150px] 2xl:h-[100px]'>
+              <button onClick={handleClick} className={`w-28 h-8 2xl:w-48 2xl:h-12 bg-button-yellow rounded-3xl flex pl-2 items-center justify-center relative md:mt-7`}>
+                <div className={[subHeaderFont.className, 'text-xs', 'text-black', 'pr-2', '2xl:text-base'].join(' ')}>이메일 복사</div>
+                <div className={`h-6 w-[30px] 2xl:w-[35px] 2xl:h-[35px] relative`}>
+                  <Image fill src="/bg-black-copy.svg" alt="bg-black-copy" />
+                </div>
+              </button>
+              <div className={[subHeaderFont.className, 'text-xs', 'text-white', 'mt-2', '2xl:text-sm'].join(' ')}>
+                {copyMessage}
               </div>
-            </button>
-            <div className={[subHeaderFont.className, 'text-xs', 'text-white', 'mt-2', '2xl:text-sm'].join(' ')}>
-              {copyMessage}
             </div>
           </div>
           <div className="flex flex-row text-white flex-wrap basis-2/4 md:flex-col md:basis-full gap-y-5 gap-x-16 mt-7">
