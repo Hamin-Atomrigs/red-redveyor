@@ -359,7 +359,7 @@ export default function Quote() {
         </div>
         <div className="mb-5">
           <ReCAPTCHA
-            sitekey={process.env.NEXT_PUBLIC_MY_PASSWORD}
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             onChange={handleCaptchaChange}
           />
         </div>
