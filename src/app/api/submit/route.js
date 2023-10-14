@@ -18,7 +18,7 @@ export async function POST(request) {
 
     const mailOptions = {
         from: formData.emailAddress,
-        to: 'ggasiyo@hanmail.net',
+        to: 'gasiyo@hanmail.net',
         cc: ['gogokhm1@gmail.com'],
         subject: `Message from website`,
         text:
