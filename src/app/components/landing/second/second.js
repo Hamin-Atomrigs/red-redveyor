@@ -20,7 +20,7 @@ export default function SecondLanding() {
 
   return (
     <>
-      <div id="services" className="bg-cover py-5" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+      <div id="services" className="bg-cover py-5" style={{ backgroundImage: 'url(/background-pattern.png)' }}>
         <div className="bg-card-section max-w-xs flex flex-col items-center m-auto py-11 rounded-2xl md:flex-row md:py-7 md:gap-x-20 2xl:py-16 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-64">
           <div className="w-56 md:w-80 2xl:w-[505px]">
             <div className={[headerFont.className, 'text-base', 'pb-2', 'md:text-xl', '2xl:text-4xl'].join(' ')}>우리는 어떤 서비스를 제공합니까?</div>

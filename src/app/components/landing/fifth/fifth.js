@@ -37,7 +37,7 @@ export default function FifthLanding() {
 
   return (
     <>
-      <div id="contactUs" className="flex flex-col bg-black items-center" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+      <div id="contactUs" className="flex flex-col bg-black items-center" style={{ backgroundImage: 'url(/background-pattern.png)' }}>
         <div className='flex flex-col md:flex-row max-w-xs md:max-w-3xl 2xl:max-w-7xl my-12 md:gap-x-20 md:w-[680px] 2xl:gap-x-48 2xl:w-[1000px]'>
           <div>
             <div className='h-[60px] md:w-[130px] md:h-[150px] 2xl:h-[100px]'>

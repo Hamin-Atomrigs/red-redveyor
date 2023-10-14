@@ -6,10 +6,10 @@ import Button from '../../button/button';
 export default function FirstLanding() {
   return (
     <>
-      <div className="bg-cover" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+      <div className="bg-cover" style={{ backgroundImage: 'url(/background-pattern.png)' }}>
         <div className="max-w-xs flex flex-row py-11 md:py-15 2xl:py-24 mx-auto md:gap-x-3 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-8" >
           <div className="hidden md:block md:w-36 md:h-64 md:mr-2 2xl:w-64 2xl:h-[616px] relative">
-            <Image className="rounded-[20px] object-cover" src="/first-section-belt.svg" alt="first-section-belt" fill />
+            <Image className="rounded-[20px] object-cover" src="/first-section-belt.png" alt="first-section-belt" fill />
           </div>
           <div className="w-40 h-[325px] md:w-52 md:h-64 2xl:w-96 2xl:h-[616px] relative">
             <Image className="rounded-[20px] object-cover" src="/second-section-belt.png" alt="second-section-belt" fill />

@@ -13,7 +13,7 @@ export default function Products() {
   const [openTab, setOpenTab] = useState(pageNum);
 
   return (
-    <div className="flex flex-column justify-center" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+    <div className="flex flex-column justify-center" style={{ backgroundImage: 'url(/background-pattern.png)' }}>
       <div className="w-1/3 md:w-1/4 bg-green">
         <ul className="flex list-none flex-col mt-36" role="tablist">
           <li className="flex-auto text-center">

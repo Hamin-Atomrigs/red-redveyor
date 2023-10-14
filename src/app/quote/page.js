@@ -101,7 +101,7 @@ export default function Quote() {
 
   return (
     <>
-      <div className='max-w-xs 2xl:py-24 mx-auto md:gap-x-3 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-8' style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+      <div className='max-w-xs 2xl:py-24 mx-auto md:gap-x-3 md:max-w-3xl md:justify-center 2xl:max-w-7xl 2xl:gap-x-8' style={{ backgroundImage: 'url(/background-pattern.png)' }}>
         <div className={[headerFont.className, 'text-lg', 'text-center', 'mt-24', 'mb-10', 'md:text-2xl', '2xl:text-3xl'].join(' ')}>무료 상담 신청서</div>
         <div className={[subHeaderFont.className, 'm-auto', 'text-sm', 'text-center', 'mb-10', 'md:text-lg', '2xl:text-xl', 'md:w-2/3', '2xl:w-2/3', 'w-50%'].join(' ')}>
           회사명, 담당자 성명, 전화번호, 이메일 주소, 그리고 코멘트는 필수 정보입니다. 이외의 정보도 저희 팀이 빠르고 효과적인 상담을 제공하는 데 큰 도움이 됩니다.

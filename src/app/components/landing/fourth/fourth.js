@@ -32,7 +32,7 @@ const boxes = [
 export default function FourthLanding() {
   return (
     <>
-      <div id="products" className="bg-card-section py-20 md:py-12" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+      <div id="products" className="bg-card-section py-20 md:py-12" style={{ backgroundImage: 'url(/background-pattern.png)' }}>
         <div className='flex flex-col	items-center max-w-xs md:max-w-3xl 2xl:max-w-7xl mx-auto'>
           <div className="text-center my-8 md:my-9 md:w-[623px] 2xl:my-20 2xl:w-[1033px]">
             <div className={[headerFont.className, 'text-sm', 'md:text-2xl', '2xl:text-4xl', 'mb-4'].join(' ')}>우리가 제공하는 모든 제품을 확인하세요</div>

@@ -7,7 +7,7 @@ export default function Services() {
   const [openTab, setOpenTab] = useState(1);
 
   return (
-    <div className="flex justify-center" style={{ backgroundImage: 'url(/background-pattern.svg)' }}>
+    <div className="flex justify-center" style={{ backgroundImage: 'url(/background-pattern.png)' }}>
       <div className="w-3/4">
         <ul className="flex list-none flex-wrap pt-3 pb-4 flex-row my-14" role="tablist">
           <li className="mr-2 last:mr-0 flex-auto text-center">
