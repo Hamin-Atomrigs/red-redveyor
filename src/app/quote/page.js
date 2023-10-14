@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { headerFont, subHeaderFont, navigationFont } from '../components/font/font';
 import Image from 'next/image';
-import { ReCAPTCHA } from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Quote() {
   const [openTab, setOpenTab] = useState(1);
@@ -357,7 +357,7 @@ export default function Quote() {
             </div>
           </div>
         </div>
-        <div className="mb-5">
+        <div className="flex mb-5 justify-center">
           <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             onChange={handleCaptchaChange}
