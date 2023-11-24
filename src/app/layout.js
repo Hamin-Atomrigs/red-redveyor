@@ -6,11 +6,7 @@ import { headers } from "next/headers";
 
 import './globals.css';
 
-// export const metadata = {
-//   title: '컨베이어 제작 업체 - 레드컨베이어',
-//   description: '30년간 검증된 컨베이어 제작의 노하우를 바탕으로, 탁월한 기술과 신뢰로 고객의 요구를 만족시키는 최적화된 솔루션을 제공합니다.',
-//   keywords: ['컨베이어 제작', '컨베이어 가격', '컨베이어 제작 가격', '서울 컨베이어 제작', '경기도 컨베이어 제작', '식품 컨베이어 제작', '벨트 컨베이어 제작', '상하차 컨베이어 제작']
-// };
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata() {
   const headersList = headers();
